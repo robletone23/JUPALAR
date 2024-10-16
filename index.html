@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>JUPALAR QUIZ</title>
+  </head>
+  <body>
+    <!-- Intro Section with Animated Images -->
+    <div class="intro-container" id="intro">
+      <div class="fighters">
+        <img src="epoy1.jpg" id="fighter1" class="fighter" alt="Fighter 1" />
+        <img src="juls.jpg" id="fighter2" class="fighter" alt="Fighter 2" />
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container" id="quiz" style="display: none;">
+      <div class="quiz-header">
+        <h2 id="question">Question text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Answer A</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Answer B</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Answer C</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Answer D</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+
+    <!-- Jumpscare Image -->
+    <img id="jumpscare" src="epoys.jpg" alt="Jumpscare" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit:fill ; z-index: 9999;">
+
+    <!-- Jumpscare Sound -->
+    <audio id="jumpscareSound" src="vid4.mp3"></audio>
+
+    <script src="index.js"></script>
+  </body>
+</html>
